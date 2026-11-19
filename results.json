@@ -1,0 +1,83 @@
+{
+  "args": {
+    "variant": [
+      "rand",
+      "static",
+      "nonstatic",
+      "multichannel"
+    ],
+    "folds": 5,
+    "epochs": 10,
+    "batch": 50,
+    "lr": 0.1,
+    "filters": 100,
+    "kernel": [
+      3,
+      4,
+      5
+    ],
+    "dropout": 0.5,
+    "max_len": 56,
+    "dim": 100,
+    "seed": 42,
+    "opt": "adadelta",
+    "device": "cpu",
+    "verbose": false,
+    "out": "results.json"
+  },
+  "device": "cpu",
+  "results": {
+    "rand": {
+      "name": "CNN-rand",
+      "folds": [
+        72.43,
+        77.26,
+        78.1,
+        78.14,
+        78.42
+      ],
+      "mean": 76.87,
+      "std": 2.25,
+      "paper": 76.1
+    },
+    "static": {
+      "name": "CNN-static",
+      "folds": [
+        78.39,
+        80.03,
+        79.32,
+        79.03,
+        76.64
+      ],
+      "mean": 78.68,
+      "std": 1.15,
+      "paper": 81.0
+    },
+    "nonstatic": {
+      "name": "CNN-non-static",
+      "folds": [
+        79.09,
+        79.93,
+        81.14,
+        81.1,
+        80.96
+      ],
+      "mean": 80.44,
+      "std": 0.81,
+      "paper": 81.5
+    },
+    "multichannel": {
+      "name": "CNN-multichannel",
+      "folds": [
+        77.4,
+        77.36,
+        80.49,
+        82.79,
+        79.08
+      ],
+      "mean": 79.42,
+      "std": 2.05,
+      "paper": 81.1
+    }
+  }
+}

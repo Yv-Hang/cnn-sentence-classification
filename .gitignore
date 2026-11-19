@@ -1,0 +1,18 @@
+# 忽略数据与缓存（GloVe 100d 约 460MB，超过 GitHub 单文件 100MB 限制）
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.part

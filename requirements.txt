@@ -1,0 +1,6 @@
+# 代码与结果依赖
+numpy
+scikit-learn
+torch
+matplotlib
+requests
