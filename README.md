@@ -81,6 +81,15 @@ python cnn_sentence.py --variant static --folds 2 --epochs 3
 | 训练轮数 | 少量 epoch + 开发集早停 | 固定 10 epoch | 未挑最优轮次 |
 | 词表 | 仅用训练折 | 全量语料（转导式） | 轻微信息泄漏，不影响结论 |
 
+## 更新仓库
+
+```powershell
+.\push.ps1 "这次改了什么"    # 自动 add + commit + push
+```
+
+脚本从 Windows 凭据管理器读取 GitHub 凭据（`git-credential-wincred.exe`）再以
+`http.extraheader` 方式推送，不需要交互式登录。
+
 ## 环境
 
 - Python 3.10 / PyTorch 2.7（CPU 或 CUDA 均可）
